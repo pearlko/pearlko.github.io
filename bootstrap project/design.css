@@ -1,4 +1,9 @@
-/*headings*/
-h1 {
-    color:rgb(97, 0, 188);
+img {
+    border-radius: 30px;
+    /*rounded corners of images*/
+    visibility: visible;
+}
+
+h2 {
+    color:rgb(137, 18, 137);
 }
