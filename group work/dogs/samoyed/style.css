@@ -1,0 +1,15 @@
+img{
+    border-radius: 30px;
+    /*rounded corners of images*/
+    visibility: visible;
+    width: 1000;
+    height: auto;
+    opacity: .80;
+}
+img:hover{
+    opacity: 100;
+    visibility: visible;
+}
+tr:hover thead:hover {
+    background-color: rgb(30, 255, 0);
+}
