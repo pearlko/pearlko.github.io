@@ -1,0 +1,45 @@
+/*followed w3schools tutorial on hero images*/
+*{
+    margin: 0;
+    height: 100%;
+}
+
+.img-container {
+    background-image: url(images/heroimage.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(186, 145, 178);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(156, 110, 147);
+    color: white;
+  }
