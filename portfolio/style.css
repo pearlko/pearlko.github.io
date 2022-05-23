@@ -1,45 +1,103 @@
-/*followed w3schools tutorial on hero images*/
-*{
-    margin: 0;
-    height: 100%;
+/*followed YouTube tutorial on how to make a navbar with hero image*/
+/*hero image and navbar code start*/
+body {
+  background-image: url(images/heroimage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
-.img-container {
-    background-image: url(images/heroimage.jpg);
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.snip {
+  font-family: tahoma;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+.snip * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: rgb(186, 145, 178);
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.snip li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 0.8em;
+  padding: 0;
+}
+
+.snip a {
+  display: inline-block;
+  padding: 1em 27px;
+  color: rgb(254, 241, 183);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.snip a:before {
+  left: 18%;
+  right: 18%;
+  top: 50%;
+  content: '';
+  border-left: 12px solid white;
+  border-right: 12px solid white;
+  transform: translateY(-50%);
+  height: 3px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.35s ease;
+}
+
+.snip a:hover,
+.snip .current a{
+  color: white;
+}
+
+.snip a:hover:before,
+  .snip .current a:before{
+    color:white;
   }
 
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: rgb(156, 110, 147);
-    color: white;
+.snip a:hover:before,
+  .snip .current a:before {
+    left: 0;
+    right: 0;
+    opacity: 1;
   }
+
+.snip li {
+  background-color: #589fa7;
+}
+/*hero image and navbar code end*/
+
+/*hero image text overlay code start*/
+.hero-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #D8736F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/*hero image text overlay code end*/
+
+/*heading code start*/
+h1 {
+  font-size: 400%;
+  font-family: cursive;
+}
+/*heading code end*/
+
+/*paragraph code start*/
+p {
+  font-size: 130%;
+  font-family:'Times New Roman', Times, serif
+}
+/*paragraph code end*/
