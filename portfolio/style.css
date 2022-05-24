@@ -1,7 +1,7 @@
 /*followed YouTube tutorial on how to make a navbar with hero image*/
 /*hero image and navbar code start*/
 body {
-  background-image: url(images/heroimage.jpg);
+  background-image: url(heroimage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
