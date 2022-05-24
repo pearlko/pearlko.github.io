@@ -75,10 +75,10 @@ body {
 
 /*hero image text overlay code start*/
 .hero-overlay {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
-  top: 0;
+  top: 190px;
   left: 0;
   color: #D8736F;
   display: flex;
@@ -90,13 +90,12 @@ body {
 
 /*heading code start*/
 h1 {
-  font-size: 400%;
+  font-size: 410%;
   font-family: cursive;
 }
-/*heading code end*/
 
-/*paragraph code start*/
-p {
-  font-size: 130%;
-  font-family:'Times New Roman', Times, serif
+h2 {
+  font-size: 190%;
+  font-family: 'Courier New', Courier, monospace;
 }
+/*heading code end*/
