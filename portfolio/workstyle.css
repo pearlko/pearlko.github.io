@@ -1,0 +1,109 @@
+/*followed YouTube tutorial on how to make a navbar with hero image*/
+/*hero image and navbar code start*/
+body {
+    background-image: url(heroimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+  
+.snip {
+    font-family: tahoma;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+  
+.snip * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+}
+  
+.snip li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 0.8em;
+    padding: 0;
+}
+  
+.snip a {
+    display: inline-block;
+    padding: 1em 27px;
+    color: rgb(254, 241, 183);
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.snip a:before {
+    left: 18%;
+    right: 18%;
+    top: 50%;
+    content: '';
+    border-left: 12px solid white;
+    border-right: 12px solid white;
+    transform: translateY(-50%);
+    height: 3px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.35s ease;
+}
+  
+.snip a:hover,
+  .snip .current a{
+    color: white;
+}
+  
+.snip a:hover:before,
+    .snip .current a:before{
+      color:white;
+}
+  
+.snip a:hover:before,
+    .snip .current a:before {
+      left: 0;
+      right: 0;
+      opacity: 1;
+}
+  
+.snip li {
+    background-color: #589fa7;
+}
+/*hero image and navbar code end*/
+  
+/*hero image text overlay code start*/
+.hero-overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 10px;
+    left: 0;
+    color: #D8736F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*hero image text overlay code end*/
+  
+/*heading code start*/
+h1 {
+    font-size: 410%;
+    font-family: cursive;
+}
+
+h2 {
+    font-size: 190%;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*heading code end*/
+
+/*images code start*/
+img {
+    border-radius: 30px;
+    /*rounded corners of images*/
+
+}
+/*images code end*/
