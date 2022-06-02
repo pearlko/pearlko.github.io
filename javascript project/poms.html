@@ -11,8 +11,6 @@
         <!--end of bootstrap code-->
         <!--css code link-->
         <link rel="stylesheet" href="design.css">
-        <!--javascript code link-->
-        <script src="pomeranian.js"></script>
     </head>
 
     <body>
@@ -100,24 +98,52 @@
    
         <!--javascript code start-->
         <div class="container p-3 text-center">
-        <h3>Are Pomeranians Cute?</h3>
-        <button type="button" onclick="myFunction()">Yes</button>
-        <button type="button" onclick="myfunction()">No</button>
-        <p id="yesbutton"></p>
-        <p id="nobutton"></p>
+        <h3>Are Poms the Dog for You?</h3>
+        <button type="button" onclick="test()">Start</button>
         </div>
 
         <script>
-          //Created function
-          function myFunction() {
-            //Declared variable
-            let str= "Yes, great choice!";
-            document.getElementById("yesbutton").innerHTML = str;
-          }
+          function test()
+          {
+            let response = [];
+            let count = 0;
+            
+            //while loop
+            while(count <3)
+            {
+              //condition: if count less than three then execute code, out of loop no longer met
+              alert ("You are about to begin the Pom quiz, please enter the word yes or no, any other responses will invalidate the results");
 
-          function myfunction () {
-            let str2= "Try again";
-            document.getElementById("nobutton").innerHTML = str2;
+              var input = prompt("Will you walk your pom at least 5 times a week?")
+              //index 0, first line of the array
+              response[0] = input;
+              count++;
+
+              var input2 = prompt("Will you feed your pom every day?")
+              response[1] = input2;
+              count++;
+
+              var input3 = prompt("Will you give your pow lots of cuddles?")
+              response[2] = input3;
+              count++; 
+            }
+            //counting the number of times user says yes/no
+            var countNo = 0
+            var countYes = 0
+            
+            //for loop
+            for(var i=0;i<response.length;i++)
+          {
+            if (response[i] == "no")
+            countNo++;
+            if (response[i] == "yes")
+            countYes++;
+          }
+          if (countYes > countNo)
+          alert ("Go Get a Pom! RIGHT NOW!");
+
+          else 
+          alert("Get a fish");
           }
 
         </script>
