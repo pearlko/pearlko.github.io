@@ -76,4 +76,69 @@ nav ul li a {
     font-size: 25px;
 }
 
-/*sketch image*/
+/*photo image*/
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.main {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.img1 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img2 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img3 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img4 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img5 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img6 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img7 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
